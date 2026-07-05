@@ -310,38 +310,8 @@
   .fact .v { font-family: var(--font-mono); color: var(--primary); font-weight: 500; font-size: .88rem; }
 
   /* ---------- TIMELINE ---------- */
-  .timeline { position: relative; padding-left: 36px; }
-  .timeline::before {
-    content: ''; position: absolute; left: 0; top: 8px; bottom: 8px;
-    width: 2px; background: var(--border);
-    border-radius: 1px;
-  }
-  .t-item { position: relative; padding-bottom: 48px; }
-  .t-item:last-child { padding-bottom: 0; }
-  .t-item::before {
-    content: ''; position: absolute; left: -42px; top: 6px;
-    width: 14px; height: 14px; border-radius: 50%;
-    background: var(--surface); border: 3px solid var(--accent);
-    box-shadow: 0 0 0 4px rgba(59,125,216,.1);
-  }
-  .t-item .t-tag {
-    font-family: var(--font-mono); font-size: .76rem;
-    color: var(--accent); letter-spacing: .06em;
-    margin-bottom: 8px; display: inline-block;
-    background: rgba(59,125,216,.06);
-    padding: 3px 10px; border-radius: 4px;
-    font-weight: 500;
-  }
-  .t-item h3 { font-size: 1.2rem; margin-bottom: 6px; }
-  .t-item .t-tools {
-    font-size: .8rem; color: var(--text-secondary);
-    margin-bottom: 14px; font-family: var(--font-mono);
-  }
-  .t-item ul { color: var(--text-secondary); font-size: .94rem; }
-  .t-item ul li { padding-left: 20px; position: relative; margin-bottom: 8px; }
-  .t-item ul li::before {
-    content: '→'; position: absolute; left: 0; color: var(--secondary); font-weight: 600;
-  }
+
+
 
   /* ---------- EDUCATION ---------- */
   .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -622,7 +592,6 @@
     </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -707,47 +676,6 @@
   </div>
 </section>
 
-<!-- ==================== EXPERIENCE ==================== -->
-<section id="experience">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="eyebrow">Experience</div>
-      <h2>Hands-on with real datasets</h2>
-      <div class="section-divider"></div>
-      <p style="margin-top:14px;">Practical, project-based experience building the full analytics pipeline — from raw data to an executive-ready dashboard.</p>
-    </div>
-    <div class="timeline reveal">
-      <div class="t-item">
-        <span class="t-tag">2024 — 2025</span>
-        <h3>Business Intelligence &amp; Dashboarding</h3>
-        <div class="t-tools">Power BI · DAX · Power Query · Excel</div>
-        <ul>
-          <li>Cleaned and modeled sales, churn, and crime-statistics datasets for accuracy and analysis-readiness.</li>
-          <li>Built DAX measures and KPIs to support executive-level reporting.</li>
-          <li>Designed interactive dashboards for sales, churn, and regional trend monitoring.</li>
-        </ul>
-      </div>
-      <div class="t-item">
-        <span class="t-tag">2023 — 2024</span>
-        <h3>Data Analysis &amp; Automation</h3>
-        <div class="t-tools">SQL · PostgreSQL · Power Automate</div>
-        <ul>
-          <li>Queried and transformed large datasets using SQL and PostgreSQL to surface trends.</li>
-          <li>Explored Power Automate and data-security best practices to streamline recurring reporting tasks.</li>
-        </ul>
-      </div>
-      <div class="t-item">
-        <span class="t-tag">2022 — 2023</span>
-        <h3>Foundations in Python &amp; Statistics</h3>
-        <div class="t-tools">Python · NumPy · Pandas · Matplotlib · Scikit-learn</div>
-        <ul>
-          <li>Applied Pandas and NumPy for data wrangling, and Matplotlib/Seaborn for exploratory visualization.</li>
-          <li>Used Scikit-learn to build early predictive models, including customer churn analysis.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ==================== EDUCATION ==================== -->
 <section id="education">
